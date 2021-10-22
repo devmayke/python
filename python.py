@@ -50,3 +50,5 @@
 #   n = int(input("Digite um número entre 0 e 10: "))
 #   if n > 9 or n < 1:
 #     print("Número inválido!")
+
+

@@ -12,11 +12,10 @@
 #   print("As strings não possem o mesmo comprimento")
 
 
-str3 = str(input("Digite seu nome: "))
+# str3 = str(input("Digite seu nome: "))
+# # for i in str3:
+# #   print(i)
 # for i in str3:
 #   print(i)
-for i in str3:
-  print(i)
-  for j in :
-    print(i, j)
- 
+#   for j in :
+#     print(i, j)
