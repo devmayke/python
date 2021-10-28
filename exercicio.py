@@ -19,3 +19,20 @@
 #   print(i)
 #   for j in :
 #     print(i, j)
+
+def soma(a,b,c,d):
+  return a + b + c + d
+def produto(a, b, c, d):
+  return a * b * c * d
+
+
+def fn ():
+  print('Digite os 4 números: ')
+  a = int(input('- '))
+  b = int(input('- '))
+  c = int(input('- '))
+  d = int(input('- '))
+  print('A soma é  ', str(soma(a, b, c, d)))
+  print('O produto é ', str(produto(a, b, c, d)))
+
+fn()
