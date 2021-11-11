@@ -1,3 +1,6 @@
+import os 
+import time
+
 def gerarMatriz(tamanhoMatriz, posicaoColuna,  posicaoLinha):
   matriz = []
   linha = []
@@ -6,14 +9,14 @@ def gerarMatriz(tamanhoMatriz, posicaoColuna,  posicaoLinha):
     if i == posicaoColuna - 1 :
       for j in range(tamanhoMatriz):
         if j == posicaoLinha - 1:
-          linha.append("1")
+          linha.append("[X]")
           linhaStatus = True
         else:
-          linha.append("0")      
+          linha.append("[ ]")      
     else:
       if linhaStatus:
         matriz.append(linha)      
-      matriz.append( ["0"] * tamanhoMatriz ) 
+      matriz.append( ["[ ]"] * tamanhoMatriz ) 
       linhaStatus = False 
   return matriz
 
@@ -24,8 +27,13 @@ def mostrarMatriz(tamanhoMatriz, posicaoLinha, posicaoColuna):
       print(" ", gerarMatriz(tamanhoMatriz, posicaoLinha, posicaoColuna)[i][j], end="" )
     print('')
 
+for i in range(11):
+  mostrarMatriz(11,1,i+1)
+  time.sleep(0.05)
+  os.system('cls')
 
-mostrarMatriz(10, 7, 6)
+
+
 
 
 
